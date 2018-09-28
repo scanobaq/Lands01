@@ -4,13 +4,19 @@ namespace lands.ViewModels
 {
     using System;
     using System.Collections.Generic;
+    using lands.Models;
     using Lands.Models;
 
     public class MainViewModel
     {
 
         #region Properties
-        public List<Land> landsList 
+        public List<Land> landsList
+        {
+            get;
+            set;
+        }
+        public TokenResponse Token
         {
             get;
             set;
@@ -33,6 +39,7 @@ namespace lands.ViewModels
             get;
             set;
         }
+       
         #endregion
 
         #region Constructors
