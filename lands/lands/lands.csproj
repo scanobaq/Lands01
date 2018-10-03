@@ -16,18 +16,17 @@
     <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.3.840" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Properties\" />
     <Folder Include="Views\" />
     <Folder Include="Models\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Infrastructure\" />
     <Folder Include="Services\" />
-    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Views\LoginPage.cs" />
     <Compile Remove="Views\LoginPageNew.xaml.cs" />
     <Compile Remove="Views\LabTablePage.xaml.cs" />
-    <Compile Remove="Resources\Resources.Designer.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="Views\LoginPageNew.xaml" />
