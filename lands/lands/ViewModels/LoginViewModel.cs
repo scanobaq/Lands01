@@ -8,6 +8,7 @@ namespace lands.ViewModels
     using lands.Views;
     using Xamarin.Forms;
     using Services;
+    using Helpers;
 
     public class LoginViewModel:BaseViewModel
     {
@@ -77,9 +78,9 @@ namespace lands.ViewModels
             if (string.IsNullOrEmpty(this.Email))
             {
                 await Application.Current.MainPage.DisplayAlert(
-                    "Error",
-                    "You must enter an  email",
-                    "Accept");
+                    Languages.Error,
+                    Languages.EmailValidation,
+                    Languages.Accept);
                 return;
             }
             if (string.IsNullOrEmpty(this.Password))

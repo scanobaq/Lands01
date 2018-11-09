@@ -6,90 +6,90 @@ namespace lands.Helpers
 {
     using Xamarin.Forms;
     using Interfaces;
-    using Resources;
+    using Properties;
 
     public static class Languages
     {
         static Languages()
         {
             var ci = DependencyService.Get<ILocalize>().GetCurrentCultureInfo();
-            Resource.Culture = ci;
+            Resources.Culture = ci;
             DependencyService.Get<ILocalize>().SetLocale(ci);
         }
 
         public static string Accept
         {
-            get { return Resource.Accept; }
+            get { return Resources.Accept; }
         }
 
         public static string EmailValidation
         {
-            get { return Resource.EmailValidation; }
+            get { return Resources.EmailValidation; }
         }
 
         public static string Error
         {
-            get { return Resource.Error; }
+            get { return Resources.Error; }
         }
 
-        public static string EmailPlaceHolder
+        /*public static string EmailPlaceHolder
         {
-            get { return Resource.EmailPlaceHolder; }
+            get { return Resources.EmailPlaceHolder; }
         }
 
         public static string Rememberme
         {
-            get { return Resource.Rememberme; }
+            get { return Resources.Rememberme; }
         }
 
         public static string PasswordValidation
         {
-            get { return Resource.PasswordValidation; }
+            get { return Resources.PasswordValidation; }
         }
 
         public static string SomethingWrong
         {
-            get { return Resource.SomethingWrong; }
+            get { return Resources.SomethingWrong; }
         }
 
         public static string Login
         {
-            get { return Resource.Login; }
+            get { return Resources.Login; }
         }
 
         public static string EMail
         {
-            get { return Resource.EMail; }
+            get { return Resources.EMail; }
         }
 
         public static string Password
         {
-            get { return Resource.Password; }
+            get { return Resources.Password; }
         }
 
         public static string PasswordPlaceHolder
         {
-            get { return Resource.PasswordPlaceHolder; }
+            get { return Resources.PasswordPlaceHolder; }
         }
 
         public static string Forgot
         {
-            get { return Resource.Forgot; }
+            get { return Resources.Forgot; }
         }
 
         public static string Register
         {
-            get { return Resource.Register; }
+            get { return Resources.Register; }
         }
 
         public static string Countries
         {
-            get { return Resource.Countries; }
+            get { return Resources.Countries; }
         }
 
         public static string Search
         {
-            get { return Resource.Search; }
+            get { return Resources.Search; }
         }
 
         public static string Country
@@ -175,6 +175,6 @@ namespace lands.Helpers
         public static string MyLanguages
         {
             get { return Resource.MyLanguages; }
-        }
+        }*/
     }
 }
