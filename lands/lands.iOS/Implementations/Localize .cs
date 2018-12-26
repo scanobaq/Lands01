@@ -5,8 +5,8 @@ namespace Lands.iOS.Implementations
     using System.Globalization;
     using System.Threading;
     using Foundation;
-    using Helpers;
-    using Interfaces;
+    using lands.Helpers;
+    using lands.Interfaces;
 
     public class Localize : ILocalize
     {

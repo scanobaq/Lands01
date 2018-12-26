@@ -4,8 +4,8 @@ namespace Lands.Droid.Implementations
 {
     using System.Globalization;
     using System.Threading;
-    using Helpers;
-    using Interfaces;
+    using lands.Helpers;
+    using lands.Interfaces;
 
     public class Localize : ILocalize
     {
