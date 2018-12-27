@@ -32,7 +32,7 @@ namespace lands.Helpers
             get { return Resources.Error; }
         }
 
-        /*public static string EmailPlaceHolder
+        public static string EmailPlaceHolder
         {
             get { return Resources.EmailPlaceHolder; }
         }
@@ -42,7 +42,27 @@ namespace lands.Helpers
             get { return Resources.Rememberme; }
         }
 
-        public static string PasswordValidation
+        public static string PassWordPlaceHolder
+        {
+            get { return Resources.PassWordPlaceHolder; }
+        }
+
+        public static string ForgotPassword
+        {
+            get { return Resources.ForgotPassword; }
+        }
+
+        public static string ButtonLogin
+        {
+            get { return Resources.ButtonLogin; }
+        }
+
+        public static string ButtonRegister
+        {
+            get { return Resources.ButtonRegister; }
+        }
+
+        /*public static string PasswordValidation
         {
             get { return Resources.PasswordValidation; }
         }

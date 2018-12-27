@@ -75,6 +75,7 @@ namespace lands.ViewModels
         #region Methods
         private async void Login()
         {
+            //Validamos que exista un email
             if (string.IsNullOrEmpty(this.Email))
             {
                 await Application.Current.MainPage.DisplayAlert(
@@ -83,30 +84,33 @@ namespace lands.ViewModels
                     Languages.Accept);
                 return;
             }
+            //Validamos que exista un password
             if (string.IsNullOrEmpty(this.Password))
             {
                 await Application.Current.MainPage.DisplayAlert(
-                    "Error",
+                    Languages.Error,
                     "You must enter a password",
-                    "Accept");
+                    Languages.Accept);
                 return;
             }
 
             this.IsRunning = true;
             this.IsEnabled = false;
 
+
+            //Validamos que exista conexión a internet
             var connection = await this.apiServies.CheckConnection();
             if (!connection.IsSuccess)
             {
                 this.IsRunning = false;
                 this.IsEnabled = true;
                 await Application.Current.MainPage.DisplayAlert(
-                    "Error",
+                    Languages.Error,
                     "You must enter a password",
-                    "Accept");
+                    Languages.Accept);
                 return;
             }
-
+            //Obtenemos token para poder conectarnos
             var token = await this.apiServies.GetToken(
                 "https://landsapicano.azurewebsites.net",
                 this.Email,
@@ -117,9 +121,9 @@ namespace lands.ViewModels
                 this.IsRunning = false;
                 this.IsEnabled = true;
                 await Application.Current.MainPage.DisplayAlert(
-                    "Error",
+                    Languages.Error,
                     "Always I don't know",
-                    "Accept");
+                    Languages.Accept);
                 return;
             }
 
@@ -128,9 +132,9 @@ namespace lands.ViewModels
                 this.IsRunning = false;
                 this.IsEnabled = true;
                 await Application.Current.MainPage.DisplayAlert(
-                    "Error",
+                    Languages.Error,
                     token.ErrorDescription,
-                    "Accept");
+                    Languages.Accept);
                 this.Password = string.Empty;
                 return;
             }

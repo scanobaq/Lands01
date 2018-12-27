@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:i18n="clr-namespace:Lands.Helpers"
              BindingContext="{Binding Main, Source={StaticResource Locator}}"
              x:Class="lands.Views.LoginPage"
              Title="login">
@@ -23,7 +24,7 @@
                            Grid.Column="0"
                            VerticalOptions="Center">
                     </Label>
-                    <Entry Placeholder = "Enter your email..."
+                    <Entry Placeholder ="{i18n:Translate EmailPlaceHolder}"
                            Keyboard = "Email"
                            Grid.Row="0"
                            Grid.Column="1"
@@ -34,7 +35,7 @@
                            Grid.Column="0"
                            VerticalOptions="Center">
                     </Label>
-                    <Entry Placeholder = "Enter your password..."
+                    <Entry Placeholder = "{i18n:Translate PassWordPlaceHolder}"
                            IsPassword="true"
                            Grid.Row="1"
                            Grid.Column="1"
@@ -47,7 +48,7 @@
                 </ActivityIndicator>
                 
                 <StackLayout Orientation = "Horizontal">
-                    <Label Text ="Rememberme on this device"
+                    <Label Text ="{i18n:Translate rememberme}"
                            VerticalOptions="Center">
                     </Label>
                     <Switch HorizontalOptions ="EndAndExpand"
@@ -55,7 +56,7 @@
                         
                     </Switch>
                 </StackLayout>
-                <Label Text="Forgot your password?"
+                <Label Text="{i18n:Translate ForgotPassword}"
                        HorizontalOptions ="Center"
                        TextColor = "Blue"
                        VerticalOptions="CenterAndExpand">
@@ -64,7 +65,7 @@
                 <StackLayout Margin="20,0" 
                              Orientation = "Horizontal"
                              VerticalOptions="CenterAndExpand">
-                    <Button Text="Login"
+                    <Button Text="{i18n:Translate ButtonLogin}"
                             BackgroundColor="Navy"
                             TextColor="White"
                             BorderRadius="23"
@@ -72,7 +73,7 @@
                             Command="{Binding LoginCommand}"
                             IsEnabled="{Binding IsEnabled, Mode=TwoWay}">
                     </Button>
-                    <Button Text="Register"
+                    <Button Text="{i18n:Translate ButtonRegister}"
                             BackgroundColor="Purple"
                             TextColor="White"
                             BorderRadius="23"

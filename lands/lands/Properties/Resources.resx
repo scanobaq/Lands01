@@ -126,4 +126,22 @@
   <data name="Error" xml:space="preserve">
     <value>Error</value>
   </data>
+  <data name="Rememberme" xml:space="preserve">
+    <value>Rememberme on this device</value>
+  </data>
+  <data name="EmailPlaceHolder" xml:space="preserve">
+    <value>Please enter your email</value>
+  </data>
+  <data name="PassWordPlaceHolder" xml:space="preserve">
+    <value>Please enter your password</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Forgot your password</value>
+  </data>
+  <data name="ButtonLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="ButtonRegister" xml:space="preserve">
+    <value>Register</value>
+  </data>
 </root>
