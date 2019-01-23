@@ -3,7 +3,6 @@ using lands.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace lands
 {
     public partial class App : Application

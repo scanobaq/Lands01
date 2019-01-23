@@ -59,7 +59,7 @@ namespace Lands.Backend.Controllers
                 return RedirectToAction("Index");
             }
 
-            return View(user);
+            return View(view);
         }
 
         private User ToUser(UserView view)
