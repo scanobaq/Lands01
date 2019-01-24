@@ -1,4 +1,5 @@
-﻿namespace lands.Services
+﻿using System;
+namespace lands.Services
 {
     using System;
     using System.Collections.Generic;
@@ -9,8 +10,7 @@
     using lands.Models;
     using Newtonsoft.Json;
     using Plugin.Connectivity;
-    using Lands.Domain;
-
+    //using Domain;
 
     public class ApiService
     {

@@ -3,15 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.Entity;
 
 namespace Lands.Domain
 {
-    public class DataContext : DbContext
+    public class Class1
     {
-        public DataContext(): base("DefaultConnection")
-        {
-
-        }
     }
 }
