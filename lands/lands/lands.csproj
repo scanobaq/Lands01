@@ -17,7 +17,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
-    <Folder Include="Models\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Infrastructure\" />
     <Folder Include="Services\" />
@@ -29,9 +28,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="Views\LoginPageNew.xaml" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Lands.Domain\Lands.Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
