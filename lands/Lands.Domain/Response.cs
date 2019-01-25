@@ -1,5 +1,4 @@
-﻿using System;
-namespace lands.Models
+﻿namespace Lands.Domain
 {
     public class Response
     {

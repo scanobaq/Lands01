@@ -7,12 +7,21 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lands.iOS", "lands.iOS\lands.iOS.csproj", "{DE5A820E-2E53-4E90-B38A-209F66785A0C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lands", "lands\lands.csproj", "{4F52DC1F-D603-47DF-A943-D9D1EBFDB4B7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{951D3833-E577-45FC-93B2-1F9151B60AE1} = {951D3833-E577-45FC-93B2-1F9151B60AE1}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lands.Domain", "Lands.Domain\Lands.Domain.csproj", "{951D3833-E577-45FC-93B2-1F9151B60AE1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lands.Backend", "Lands.Backend\Lands.Backend.csproj", "{F1260276-71E3-4D64-90D2-0A78225A89B5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{951D3833-E577-45FC-93B2-1F9151B60AE1} = {951D3833-E577-45FC-93B2-1F9151B60AE1}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lands.API", "Lands.API\Lands.API.csproj", "{4675594F-8DAB-4C65-878A-C10433EF6EFA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{951D3833-E577-45FC-93B2-1F9151B60AE1} = {951D3833-E577-45FC-93B2-1F9151B60AE1}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

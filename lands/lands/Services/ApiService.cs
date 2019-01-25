@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 namespace lands.Services
 {
     using System;
@@ -10,8 +10,7 @@ namespace lands.Services
     using lands.Models;
     using Newtonsoft.Json;
     using Plugin.Connectivity;
-    //using Domain;
-
+    using Lands.Domain;
     public class ApiService
     {
         public async Task<Response> CheckConnection()
